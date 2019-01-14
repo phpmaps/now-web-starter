@@ -20,10 +20,6 @@
         {
             "src": "src/public/js/*.**",
             "use": "@now/static"
-        },
-        {
-            "src": "src/public/about.html",
-            "use": "@now/html-minifier"
         }
     ],
     "routes": [
