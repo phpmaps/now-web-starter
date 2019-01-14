@@ -18,6 +18,10 @@
             "use": "@now/static"
         },
         {
+            "src": "src/public/js/*.**",
+            "use": "@now/static"
+        },
+        {
             "src": "src/public/about.html",
             "use": "@now/html-minifier"
         }
@@ -36,8 +40,8 @@
             "dest": "src/public/css/$1"
         },
         {
-            "src": "/about.html",
-            "dest": "src/public/about.html"
+            "src": "/js/(.*)",
+            "dest": "src/public/js/$1"
         },
         {
             "src": "/(.*)",
