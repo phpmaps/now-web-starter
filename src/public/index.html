@@ -1,0 +1,78 @@
+
+<html>
+
+    <head>
+        <title>App Demo | NodeJS | Geo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/earth-globe.png" type="image/png">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <link href='css/custom.css' rel='stylesheet' type='text/css'>
+    </head>
+    
+    <body>
+    
+        <div class="container">
+    
+            <div class="row">
+    
+                <div class="col-xl-8 offset-xl-2 py-5">
+    
+                    <h1>Example location intelligence service, Zip Code 
+                        <a href="https://developers.arcgis.com/rest/geoenrichment/api-reference/enrich.htm">GeoEnrichment</a>
+                    </h1>
+    
+                    <p class="lead">Enriches US postal codes, returns spatial data with demographic and lifestyle information appended in GeoJSON format.</p>
+    
+    
+                    <form id="enrichment-form" method="post" action="/api/enrich/zips" role="form">
+    
+                        <div class="messages"></div>
+    
+                        <div class="controls">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_params">Message *</label>
+                                        <textarea id="form_params" name="params" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Opps...something went wrong."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" class="btn btn-success btn-send" value="Send">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="text-muted">
+                                        <strong>*</strong> These fields are required. API example by <a href="https://twitter.com/globebeta" target="_blank">@Globebeta</a>
+                                        and <a href="https://twitter.com/jim2" target="_blank">@Jim2</a></p>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </form>
+    
+                </div>
+ 
+    
+            </div>
+ 
+    
+        </div>
+
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+
+        <script id="__bs_script__">//<![CDATA[
+          document.write("<script async src='http://HOST:4016/browser-sync/browser-sync-client.js?v=2.26.3'><\/script>".replace("HOST", location.hostname));
+      //]]></script>
+
+    </body>
+    
+    </html>
