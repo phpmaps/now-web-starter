@@ -1,0 +1,19 @@
+{
+  "name": "zip-suey",
+  "version": "0.0.1",
+  "description": "Enriches US postal codes, returns spatial data w/ demographic and lifestyle data appened",
+  "main": "index.js",
+  "author": "@globebeta",
+  "scripts": {
+    "start": "node .",
+    "dev": "browser-sync start --port 4000 --files 'public' & node .",
+    "deploy": "now",
+    "now-build": ""
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
